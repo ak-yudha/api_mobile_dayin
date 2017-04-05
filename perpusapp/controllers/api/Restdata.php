@@ -80,7 +80,7 @@ class Restdata extends REST_Controller{
       'nama'=>$nama,
       'password'=>$pass,
       'message'=>'Invalid Credentials!!'
-      ],HTTP_BAD_REQUEST);
+      ],REST_Controller::HTTP_BAD_REQUEST);
   }
 
 //method untuk mengecek token setiap melakukan post, put, etc
