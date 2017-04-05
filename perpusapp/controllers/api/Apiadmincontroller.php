@@ -29,13 +29,13 @@ class Apiadmincontroller extends Restdata{
 
         $this->response([
           'message'=>'Admin Berhasil Di Buat'
-        ],HTTP_OK);
+        ],Restdata::HTTP_OK);
 
       }else {
 
         $this->response([
           'message'=>'Admin Gagal Di Buat'
-        ],HTTP_BAD_REQUEST);
+        ],Restdata::HTTP_BAD_REQUEST);
 
       }
     }
