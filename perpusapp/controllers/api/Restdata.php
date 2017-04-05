@@ -59,7 +59,7 @@ class Restdata extends REST_Controller{
         $payload['exp'] = $date->getTimestamp() + 2629746; //satu bulan
 
         $output['id_token'] = JWT::encode($payload,$this->secretkey);
-        $this->response($output,HTTP_OK);
+        $this->response($output,REST_Controller::HTTP_OK);
 
       }else {
 
