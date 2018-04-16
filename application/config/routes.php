@@ -54,3 +54,12 @@ $route['api/viewtoken']['POST']                       = 'api/restdata/viewtoken'
 
 //---------------------------------api admin---------------------------------------------------------
 $route['api/admin']['POST']                           = 'api/apiadmincontroller/admin';//untuk menambahkan admin
+
+//---------------------------------NEW YUDHA - Rumah Sakit-------------------------------------------
+
+$route['api/rumahsakit']['GET']                       = 'api/apirumahsakitcontroller/rumahsakit';
+$route['api/klaim']['GET']                            = 'api/apiklaimcontroller/klaim';
+$route['api/benefit']['GET']                          = 'api/apibenefitcontroller/benefit';
+$route['api/company']['GET']                          = 'api/apicompanycontroller/company';
+$route['api/saldo']['GET']                            = 'api/apisaldocontroller/saldo';
+$route['api/state']['GET']                            = 'api/apistatecontroller/state';
